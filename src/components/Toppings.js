@@ -14,6 +14,9 @@ const containerVariants = {
       type: 'spring',
       delay: 0.5 
     }
+  },
+  exit: {
+    x: '-100vw'
   }
 };
 
@@ -33,7 +36,7 @@ const Toppings = ({ addTopping, pizza }) => {
   let toppings = ['mushrooms', 'peppers', 'onions', 'olives', 'extra cheese', 'tomatoes'];
 
   return (
-    <motion.div variants={containerVariants} initial="hidden" animate="visible" className="toppings container">
+    <motion.div variants={containerVariants} initial="hidden" animate="visible" exit="exit" className="toppings container">
       
       <h3>Step 2: Choose Toppings</h3>
       <ul>
