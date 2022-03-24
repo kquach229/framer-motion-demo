@@ -14,7 +14,8 @@ const containerVariants = {
     }
   },
   exit: {
-    x: '-100vw'
+    x: '-100vw',
+    transition: { ease: 'easeInOut' }
   }
 }
 
